@@ -1,0 +1,37 @@
+{
+    "name": "dazzlesoftware/keychain",
+    "type": "library",
+    "description": "Dazzle Keychain Package",
+    "keywords": ["dazzle", "framework", "keychain"],
+    "homepage": "https://github.com/dazzle-framework/keychain",
+    "license": "LGPL-2.1-or-later",
+    "require": {
+       "php": "^7.3.0",
+        "dazzlesoftware/crypt": "^1.0",
+        "dazzlesoftware/registry": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/console": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/console": "For managing a keychain through a command line interface"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Keychain\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Keychain\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
